@@ -335,7 +335,7 @@ export default function Contact() {
             <img 
               src="/logo.png" 
               alt="H.V. Ranade & Associates" 
-              className="h-16 w-auto object-contain opacity-80"
+              className="h-32 w-auto object-contain opacity-80"
             />
             <p className="text-white/40 text-sm">
               © 2024 H.V. Ranade & Associates. All rights reserved.

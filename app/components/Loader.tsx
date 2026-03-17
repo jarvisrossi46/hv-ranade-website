@@ -59,7 +59,7 @@ export default function Loader() {
             <img 
               src="/logo.png" 
               alt="H.V. Ranade & Associates" 
-              className="w-24 h-auto object-contain"
+              className="w-48 h-auto object-contain"
             />
           </div>
         </div>
