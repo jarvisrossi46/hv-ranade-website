@@ -94,14 +94,14 @@ export default function WhyChooseUs() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Stats Counter */}
-        <div className="grid grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 mb-20">
           {[
             { value: counters.years, suffix: "+", label: "Years Experience" },
             { value: counters.clients, suffix: "+", label: "Happy Clients" },
             { value: counters.claims, suffix: "+", label: "Claims Settled" },
           ].map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#d69e2e] mb-2">
+            <div key={index} className="text-center px-4">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#d69e2e] mb-2 whitespace-nowrap">
                 {stat.value}{stat.suffix}
               </div>
               <div className="text-white/60 text-sm md:text-base">{stat.label}</div>
