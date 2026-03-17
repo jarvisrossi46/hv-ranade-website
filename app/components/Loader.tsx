@@ -37,20 +37,20 @@ export default function Loader() {
     <div className="fixed inset-0 bg-[#1a365d] z-50 flex flex-col items-center justify-center">
       <div className="relative">
         {/* Animated icons circle */}
-        <div className="w-48 h-48 relative">
+        <div className="w-40 h-40 md:w-56 md:h-56 relative">
           {icons.map(({ Icon, delay }, index) => (
             <div
               key={index}
-              className="absolute w-10 h-10 flex items-center justify-center"
+              className="absolute w-8 h-8 md:w-10 md:h-10 flex items-center justify-center"
               style={{
-                top: `${50 + 35 * Math.sin((index * 36 * Math.PI) / 180)}%`,
-                left: `${50 + 35 * Math.cos((index * 36 * Math.PI) / 180)}%`,
+                top: `${50 + 32 * Math.sin((index * 36 * Math.PI) / 180)}%`,
+                left: `${50 + 32 * Math.cos((index * 36 * Math.PI) / 180)}%`,
                 transform: "translate(-50%, -50%)",
                 animation: `fade-in 0.5s ease-out ${delay}s forwards`,
                 opacity: 0,
               }}
             >
-              <Icon className="w-6 h-6 text-[#d69e2e]" />
+              <Icon className="w-5 h-5 md:w-6 md:h-6 text-[#d69e2e]" />
             </div>
           ))}
           
@@ -59,7 +59,7 @@ export default function Loader() {
             <img 
               src="/logo.png" 
               alt="H.V. Ranade & Associates" 
-              className="w-48 h-auto object-contain"
+              className="w-28 md:w-48 h-auto object-contain"
             />
           </div>
         </div>
