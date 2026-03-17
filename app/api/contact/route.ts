@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend only if API key exists
+const resendApiKey = process.env.RESEND_API_KEY;
+const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
 const productLabels: Record<string, string> = {
   life: "Life Insurance",
@@ -26,6 +28,15 @@ export async function POST(request: Request) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
+      );
+    }
+
+    // If no Resend API key, log and return success (for demo/testing)
+    if (!resend) {
+      console.log("Form submission (email not configured):", { name, email, phone, product, message });
+      return NextResponse.json(
+        { success: true, message: "Form received (email service not configured)" },
+        { status: 200 }
       );
     }
 
