@@ -119,14 +119,14 @@ export default function About() {
             <div className="glass rounded-2xl p-6 mb-8 border border-[#d69e2e]/20">
               <div className="flex items-center gap-4">
                 <div className="relative">
-                  <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-[#d69e2e] ring-4 ring-[#d69e2e]/20">
+                  <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#d69e2e] ring-4 ring-[#d69e2e]/20">
                     <img 
                       src="/founder.jpg" 
                       alt="H.V. Ranade - Founder" 
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
-                  <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#d69e2e] rounded-full flex items-center justify-center">
+                  <div className="absolute -bottom-1 -right-1 w-7 h-7 bg-[#d69e2e] rounded-full flex items-center justify-center">
                     <span className="text-[#1a365d] text-xs font-bold">35+</span>
                   </div>
                 </div>
