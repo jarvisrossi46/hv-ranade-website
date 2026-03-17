@@ -133,16 +133,26 @@ export default function Contact() {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-[#d69e2e]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-[#d69e2e]" />
+                  </div>
+                  <div>
+                    <div className="text-white/60 text-sm mb-1">Head Office</div>
+                    <p className="text-white text-sm leading-relaxed">
+                      Office # 16, 3rd Floor, Suvarna Complex,<br />
+                      Above Raees Hardware, Karve Road,<br />
+                      Pune - 411038
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-[#d69e2e]/10 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Phone className="w-5 h-5 text-[#d69e2e]" />
                   </div>
                   <div>
-                    <div className="text-white/60 text-sm mb-1">Phone</div>
-                    <a href="tel:+919822012345" className="text-white hover:text-[#d69e2e] transition-colors">
-                      +91 98220 12345
-                    </a>
-                    <br />
-                    <a href="tel:+912024456789" className="text-white hover:text-[#d69e2e] transition-colors">
-                      +91 20 2445 6789
+                    <div className="text-white/60 text-sm mb-1">Mobile</div>
+                    <a href="tel:+919175650337" className="text-white hover:text-[#d69e2e] transition-colors">
+                      +91 91756 50337
                     </a>
                   </div>
                 </div>
@@ -153,23 +163,23 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-white/60 text-sm mb-1">Email</div>
-                    <a href="mailto:hvranade@yahoo.com" className="text-white hover:text-[#d69e2e] transition-colors">
-                      hvranade@yahoo.com
+                    <a href="mailto:Hrishikesh@ranade.net" className="text-white hover:text-[#d69e2e] transition-colors text-sm">
+                      Hrishikesh@ranade.net
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-[#d69e2e]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-[#d69e2e]" />
+                    <svg className="w-5 h-5 text-[#d69e2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
                   </div>
                   <div>
-                    <div className="text-white/60 text-sm mb-1">Address</div>
-                    <p className="text-white">
-                      Pune, Maharashtra
-                      <br />
-                      India
-                    </p>
+                    <div className="text-white/60 text-sm mb-1">Website</div>
+                    <a href="https://hvranade.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#d69e2e] transition-colors">
+                      hvranade.com
+                    </a>
                   </div>
                 </div>
               </div>

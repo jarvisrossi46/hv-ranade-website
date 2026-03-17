@@ -43,7 +43,7 @@ export async function POST(request: Request) {
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: "H.V. Ranade Website <onboarding@resend.dev>",
-      to: "hvranade@yahoo.com",
+      to: "Hrishikesh@ranade.net",
       subject: `New Insurance Enquiry from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f5f5f5;">
