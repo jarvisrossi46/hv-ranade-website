@@ -7,6 +7,7 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Services from "./sections/Services";
 import WhyChooseUs from "./sections/WhyChooseUs";
+import Partners from "./sections/Partners";
 import Contact from "./sections/Contact";
 import Navigation from "./components/Navigation";
 import Loader from "./components/Loader";
@@ -44,6 +45,7 @@ export default function Home() {
       <About />
       <Services />
       <WhyChooseUs />
+      <Partners />
       <Contact />
     </main>
   );
