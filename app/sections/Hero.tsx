@@ -107,7 +107,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24 md:pt-32">
         <div className="inline-flex items-center gap-2 bg-[#d69e2e]/10 border border-[#d69e2e]/30 rounded-full px-4 py-2 mb-8">
           <span className="w-2 h-2 bg-[#d69e2e] rounded-full animate-pulse" />
           <span className="text-[#d69e2e] text-sm font-medium">35+ Years of Excellence</span>

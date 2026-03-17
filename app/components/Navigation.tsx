@@ -65,7 +65,7 @@ export default function Navigation() {
             <img 
               src="/logo.png" 
               alt="H.V. Ranade & Associates" 
-              className="h-14 md:h-24 w-auto object-contain"
+              className="h-16 md:h-28 w-auto object-contain"
             />
           </div>
 
