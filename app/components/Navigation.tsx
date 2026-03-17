@@ -62,13 +62,11 @@ export default function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#d69e2e] rounded-lg flex items-center justify-center">
-              <span className="text-[#1a365d] font-bold text-lg">HVR</span>
-            </div>
-            <div className="hidden sm:block">
-              <div className="text-white font-semibold text-sm">H.V. Ranade</div>
-              <div className="text-[#d69e2e] text-xs">& Associates</div>
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="H.V. Ranade & Associates" 
+              className="h-12 w-auto object-contain"
+            />
           </div>
 
           {/* Desktop Nav */}

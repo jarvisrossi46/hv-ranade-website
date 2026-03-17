@@ -330,10 +330,17 @@ export default function Contact() {
         </div>
 
         {/* Footer */}
-        <div className="mt-20 pt-8 border-t border-white/10 text-center">
-          <p className="text-white/40 text-sm">
-            © 2024 H.V. Ranade & Associates. All rights reserved.
-          </p>
+        <div className="mt-20 pt-8 border-t border-white/10">
+          <div className="flex flex-col items-center gap-4">
+            <img 
+              src="/logo.png" 
+              alt="H.V. Ranade & Associates" 
+              className="h-16 w-auto object-contain opacity-80"
+            />
+            <p className="text-white/40 text-sm">
+              © 2024 H.V. Ranade & Associates. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </section>

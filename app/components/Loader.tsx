@@ -56,10 +56,11 @@ export default function Loader() {
           
           {/* Center logo */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">HVR</div>
-              <div className="text-xs text-[#d69e2e] tracking-wider">INSURANCE</div>
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="H.V. Ranade & Associates" 
+              className="w-24 h-auto object-contain"
+            />
           </div>
         </div>
       </div>
