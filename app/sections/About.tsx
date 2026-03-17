@@ -115,6 +115,29 @@ export default function About() {
               we have the expertise to guide you.
             </p>
 
+            {/* Founder Card */}
+            <div className="glass rounded-2xl p-6 mb-8 border border-[#d69e2e]/20">
+              <div className="flex items-center gap-4">
+                <div className="relative">
+                  <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-[#d69e2e] ring-4 ring-[#d69e2e]/20">
+                    <img 
+                      src="/founder.jpg" 
+                      alt="H.V. Ranade - Founder" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#d69e2e] rounded-full flex items-center justify-center">
+                    <span className="text-[#1a365d] text-xs font-bold">35+</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-white">H.V. Ranade</h4>
+                  <p className="text-[#d69e2e] text-sm">Founder & Principal Advisor</p>
+                  <p className="text-white/50 text-xs mt-1">Leading with integrity since 1989</p>
+                </div>
+              </div>
+            </div>
+
             <div className="flex flex-wrap gap-4">
               <div className="glass rounded-xl px-6 py-4">
                 <div className="text-3xl font-bold text-[#d69e2e]">35+</div>
