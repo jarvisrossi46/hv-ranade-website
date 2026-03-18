@@ -7,18 +7,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const partners = [
-  { name: "HDFC ERGO", color: "#004C8F" },
-  { name: "ICICI Lombard", color: "#C41230" },
-  { name: "Bajaj Allianz", color: "#003399" },
-  { name: "TATA AIG", color: "#007CC2" },
-  { name: "New India Assurance", color: "#1E4D8C" },
-  { name: "United India Insurance", color: "#0066B3" },
-  { name: "Oriental Insurance", color: "#0066CC" },
-  { name: "National Insurance", color: "#003D7A" },
-  { name: "SBI General Insurance", color: "#0066B3" },
-  { name: "Reliance General Insurance", color: "#E31837" },
-  { name: "Future Generali", color: "#ED1C24" },
-  { name: "IFFCO Tokio", color: "#0066B3" },
+  { name: "Partner 1", logo: "/partners/partner1.jpg" },
+  { name: "Partner 2", logo: "/partners/partner2.jpg" },
+  { name: "Partner 3", logo: "/partners/partner3.jpg" },
+  { name: "Partner 4", logo: "/partners/partner4.jpg" },
+  { name: "Partner 5", logo: "/partners/partner5.jpg" },
+  { name: "Partner 6", logo: "/partners/partner6.jpg" },
+  { name: "Partner 7", logo: "/partners/partner7.jpg" },
+  { name: "Partner 8", logo: "/partners/partner8.jpg" },
+  { name: "Partner 9", logo: "/partners/partner9.jpg" },
 ];
 
 export default function Partners() {
@@ -81,21 +78,17 @@ export default function Partners() {
         </div>
 
         {/* Partners Grid */}
-        <div ref={cardsRef} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
+        <div ref={cardsRef} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8">
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="group glass rounded-xl p-4 md:p-6 hover:bg-[#2c5282]/50 transition-all duration-300 hover:-translate-y-1 text-center"
+              className="group glass rounded-xl p-4 md:p-6 hover:bg-[#2c5282]/50 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center"
             >
-              <div 
-                className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 rounded-lg flex items-center justify-center text-white font-bold text-xs md:text-sm"
-                style={{ backgroundColor: partner.color }}
-              >
-                {partner.name.split(' ').map(n => n[0]).join('').substring(0, 2)}
-              </div>
-              <h3 className="text-white text-xs md:text-sm font-medium leading-tight">
-                {partner.name}
-              </h3>
+              <img 
+                src={partner.logo} 
+                alt={partner.name}
+                className="w-full h-16 md:h-20 object-contain filter brightness-90 group-hover:brightness-100 transition-all"
+              />
             </div>
           ))}
         </div>

@@ -341,12 +341,28 @@ export default function Contact() {
 
         {/* Footer */}
         <div className="mt-20 pt-8 border-t border-white/10">
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-6">
             <img 
               src="/logo.png" 
               alt="H.V. Ranade & Associates" 
               className="h-32 w-auto object-contain opacity-80"
             />
+            
+            {/* Staqwise Credit */}
+            <a 
+              href="https://www.staqwise.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 glass rounded-full px-6 py-3 hover:bg-[#2c5282]/50 transition-all duration-300"
+            >
+              <span className="text-white/60 text-sm">Powered by</span>
+              <img 
+                src="/staqwise.jpg" 
+                alt="Staqwise Solutions" 
+                className="h-8 w-auto object-contain"
+              />
+            </a>
+            
             <p className="text-white/40 text-sm">
               © 2024 H.V. Ranade & Associates. All rights reserved.
             </p>

@@ -8,6 +8,7 @@ import About from "./sections/About";
 import Services from "./sections/Services";
 import WhyChooseUs from "./sections/WhyChooseUs";
 import Partners from "./sections/Partners";
+import Clients from "./sections/Clients";
 import Contact from "./sections/Contact";
 import Navigation from "./components/Navigation";
 import Loader from "./components/Loader";
@@ -46,6 +47,7 @@ export default function Home() {
       <Services />
       <WhyChooseUs />
       <Partners />
+      <Clients />
       <Contact />
     </main>
   );
