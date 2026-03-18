@@ -353,14 +353,9 @@ export default function Contact() {
               href="https://www.staqwise.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-3 glass rounded-full px-6 py-3 hover:bg-[#2c5282]/50 transition-all duration-300"
+              className="text-white/60 text-sm hover:text-[#d69e2e] transition-colors"
             >
-              <span className="text-white/60 text-sm">Powered by</span>
-              <img 
-                src="/staqwise.jpg" 
-                alt="Staqwise Solutions" 
-                className="h-8 w-auto object-contain"
-              />
+              Powered by <span className="font-semibold">STAQwise Solutions Pvt. Ltd.</span>
             </a>
             
             <p className="text-white/40 text-sm">
